@@ -53,10 +53,10 @@ This assignment should prove that a student is able to:
 `For the Robot Face exercise:`
 
 - [ ] Visit the [The shapes of CSS](https://css-tricks.com/the-shapes-of-css/) article for some shapes inspiration.
-- [ ] Edit the following files to solve that part of the assignemnt:
+- [ ] Edit the following files to solve that part of the assignment:
   - [ ] html: `/pages/fancy-robot.html`
   - [ ] css: `/css/fancy-robot.css`
-- [ ] The container for the robot face (face shape) should be positioned/aligned folowing the rules:
+- [ ] The container for the robot face (face shape) should be positioned/aligned following the rules:
   - [ ] It should be horizontally centered to the viewport width and height.
   - [ ] The container should not overlap the header section.
 - [ ] Style the shape of the robot face to follow the requirements:
