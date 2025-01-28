@@ -7,9 +7,9 @@
   position: relative;
   height: 400px;
   width: 400px;
-  border: 10px solid #40e0d0;
+  border: 10px solid #c44a7a;
   border-radius: 10%;
-  background: radial-gradient(#40e0d0, #ffd700);
+  background: radial-gradient(#f6dcac, #312b6f, #c44a7a);
 }
 
 .robot-eye-left {
@@ -38,11 +38,23 @@
   transform-origin: 100% 100%;
 }
 
+.robot-pupil-left {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  z-index: 2;
+  background-color: white;
+  border: 2px solid #312b6f;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 .robot-eye-right {
   position: absolute;
   width: 100px;
   height: 40px;
-  background: red;
+  background: center / cover no-repeat url(https://picsum.photos/id/56/1000);
   top: 80px;
   right: 50px;
   -moz-border-radius: 10px;
@@ -57,8 +69,21 @@
   width: 0;
   height: 0;
   border-top: 8px solid transparent;
-  border-right: 40px solid red;
+  border-right: 40px solid #312b6f;
   border-bottom: 8px solid transparent;
+}
+
+.robot-pupil-right {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+  z-index: 2;
+  background-color: #312b6f;
+  border: 1px solid white;
+  width: 45px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .robot-ear-left {
@@ -68,7 +93,17 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  box-shadow: 25px 25px 0 0 red;
+  box-shadow: 25px 25px 0 0 forestgreen;
+}
+
+.robot-earring {
+  position: relative;
+  top: 130px;
+  left: -470px;
+  z-index: 2;
+  width: 25px;
+  height: 25px;
+  background-color: mediumaquamarine;
 }
 
 .robot-ear-right {
@@ -79,17 +114,18 @@
   height: 120px;
   transform: rotate(0.25turn);
   border-radius: 50%;
-  box-shadow: 25px 25px 0 0 red;
+  box-shadow: 25px 25px 0 0 forestgreen;
 }
 
 .robot-nose {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 40px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 20px;
   box-sizing: content-box;
+  opacity: 50%;
 }
 
 .robot-nose:before,
@@ -99,9 +135,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 25px;
-  height: 25px;
-  border: 12px solid red;
+  width: 30px;
+  height: 30px;
+  border: 14px solid #2b303e;
   border-radius: 50px 50px 0 50px;
   transform: rotate(-45deg);
 }
@@ -121,6 +157,7 @@
   width: 60%;
   height: 15%;
   text-align: center;
+  border-radius: 30%;
 }
 
 .robot-tooth {
@@ -129,9 +166,9 @@
 }
 
 .robot-tooth:nth-child(1) {
-  top: -50%;
+  top: -60%;
   left: 15%;
-  border-bottom: 20px solid red;
+  border-bottom: 20px solid #bbc9ff;
   border-right: 20px solid transparent;
   border-radius: 0 5px 0 20px;
   height: 0;
@@ -139,14 +176,14 @@
 }
 
 .robot-tooth:nth-child(2) {
-  top: -40%;
+  top: -50%;
   left: 7%;
 }
 
 .robot-tooth:nth-child(3) {
-  top: -50%;
+  top: -60%;
 
-  border-bottom: 20px solid red;
+  border-bottom: 20px solid white;
   border-left: 20px solid transparent;
   border-radius: 5px 0 20px 0;
   height: 0;
@@ -154,9 +191,9 @@
 }
 
 .robot-tooth:nth-child(4) {
-  top: -50%;
+  top: -60%;
 
-  border-bottom: 20px solid red;
+  border-bottom: 20px solid white;
   border-right: 20px solid transparent;
   border-radius: 0 5px 0 20px;
   height: 0;
@@ -164,14 +201,14 @@
 }
 
 .robot-tooth:nth-child(5) {
-  top: -40%;
+  top: -50%;
   right: 7%;
 }
 
 .robot-tooth:nth-child(6) {
-  top: -50%;
+  top: -60%;
   right: 15%;
-  border-bottom: 20px solid red;
+  border-bottom: 20px solid #bbc9ff;
   border-left: 20px solid transparent;
   border-radius: 5px 0 20px 0;
   height: 0;
@@ -179,10 +216,10 @@
 }
 
 .robot-tooth:nth-child(7) {
-  top: -50%;
+  top: -60%;
   left: 15%;
   transform: rotateX(180deg);
-  border-bottom: 15px solid red;
+  border-bottom: 15px solid #daf0f2;
   border-left: 25px solid transparent;
   border-radius: 5px 0 20px 0;
   height: 0;
@@ -190,10 +227,10 @@
 }
 
 .robot-tooth:nth-child(8) {
-  top: -50%;
+  top: -60%;
   left: 7%;
   transform: rotateX(180deg);
-  border-bottom: 20px solid red;
+  border-bottom: 20px solid #82aeb3;
   border-left: 25px solid transparent;
   border-radius: 5px 0 20px 0;
   height: 0;
@@ -201,9 +238,9 @@
 }
 
 .robot-tooth:nth-child(9) {
-  top: -50%;
+  top: -60%;
   transform: rotateX(180deg);
-  border-bottom: 25px solid red;
+  border-bottom: 25px solid white;
   border-left: 30px solid transparent;
   border-radius: 5px 0 20px 0;
   height: 0;
@@ -211,9 +248,9 @@
 }
 
 .robot-tooth:nth-child(10) {
-  top: -50%;
+  top: -60%;
   transform: rotateX(180deg);
-  border-bottom: 25px solid red;
+  border-bottom: 25px solid white;
   border-right: 30px solid transparent;
   border-radius: 0 5px 0 20px;
   height: 0;
@@ -221,10 +258,10 @@
 }
 
 .robot-tooth:nth-child(11) {
-  top: -50%;
+  top: -60%;
   right: 7%;
   transform: rotateX(180deg);
-  border-bottom: 20px solid red;
+  border-bottom: 20px solid #82aeb3;
   border-right: 25px solid transparent;
   border-radius: 0 5px 0 20px;
   height: 0;
@@ -232,10 +269,10 @@
 }
 
 .robot-tooth:nth-child(12) {
-  top: -50%;
+  top: -60%;
   right: 15%;
   transform: rotateX(180deg);
-  border-bottom: 15px solid red;
+  border-bottom: 15px solid #daf0f2;
   border-right: 25px solid transparent;
   border-radius: 0 5px 0 20px;
   height: 0;
@@ -244,7 +281,7 @@
 
 .canine {
   border-style: solid;
-  border-color: transparent transparent red transparent;
+  border-color: transparent transparent #b9f2ff transparent;
   border-width: 0 10px 10px 10px;
   top: -20%;
   height: 0;
@@ -262,7 +299,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: red transparent transparent transparent;
+  border-color: #b9f2ff transparent transparent transparent;
   border-width: 30px 20px 0 20px;
 }
 
@@ -288,7 +325,7 @@
   width: 0.2em;
   box-sizing: content-box;
   height: 0.2em;
-  border: 0.15em solid #ffd700;
+  border: 0.15em solid #f6dcac;
   position: relative;
   border-radius: 50%;
 }
@@ -300,7 +337,7 @@
   left: 50%;
   bottom: -182%;
   border-width: 0;
-  background: linear-gradient(to left, #40e0d0, #ffd700);
+  background: linear-gradient(to left, #c44a7a, #f6dcac);
   width: 0.55em;
   height: 0.1em;
   transform: translateX(-50%) rotate(90deg);
@@ -309,15 +346,15 @@
 .robot-hair-two {
   position: relative;
   bottom: -45%;
-  width: 15px;
-  height: 40px;
-  background-color: red;
+  width: 20px;
+  height: 55px;
+  background-color: blueviolet;
 }
 
 .robot-hair-one {
   position: relative;
   bottom: -45%;
-  width: 15px;
-  height: 20px;
-  background-color: red;
+  width: 20px;
+  height: 30px;
+  background-color: teal;
 }
